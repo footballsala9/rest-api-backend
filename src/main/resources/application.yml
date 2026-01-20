@@ -40,6 +40,15 @@ spring:
           issuer-uri: ${JWT_ISSUER_URI:http://localhost:8080}
           jwk-set-uri: ${JWT_JWK_SET_URI:http://localhost:8080/.well-known/jwks.json}
 
+# AWS Configuration
+aws:
+  s3:
+    endpoint: ${AWS_ENDPOINT:http://localhost:4566}
+    region: ${AWS_REGION:us-east-1}
+    bucket-name: ${AWS_BUCKET_NAME:demo-bucket}
+    access-key: ${AWS_ACCESS_KEY_ID:test}
+    secret-key: ${AWS_SECRET_ACCESS_KEY:test}
+
 # Server Configuration
 server:
   port: 8080
