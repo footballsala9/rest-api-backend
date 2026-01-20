@@ -9,8 +9,10 @@ spring:
     password: ${DB_PASSWORD:password}
     driver-class-name: org.postgresql.Driver
     hikari:
+      pool-name: HikariPool-Demo
       maximum-pool-size: 10
-      minimum-idle: 5
+      # Recommend setting minimum-idle to the same value as maximum-pool-size for a fixed-size pool
+      minimum-idle: 10
       connection-timeout: 30000
       idle-timeout: 600000
       max-lifetime: 1800000
