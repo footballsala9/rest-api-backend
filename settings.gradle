@@ -1,1 +1,2 @@
 rootProject.name = 'demo'
+include 'common', 'feature-main', 'feature-admin', 'application'
