@@ -1,0 +1,8 @@
+CREATE SCHEMA IF NOT EXISTS demo;
+
+CREATE TABLE IF NOT EXISTS demo.products (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    description TEXT
+);
