@@ -42,6 +42,7 @@ graph TD
   - H2 Database (テスト用 / In-Memory)
 - **クラウドエミュレーション**: LocalStack (AWS S3)
 - **認証・認可**: Spring Security, OAuth2 Resource Server
+- **API ドキュメント**: SpringDoc OpenAPI (Swagger UI)
 - **コンテナ化**: Docker, Docker Compose
 
 ## ✅ 前提条件
@@ -50,6 +51,15 @@ graph TD
 
 - **Java Development Kit (JDK) 21**
 - **Docker Desktop** (または Docker Engine + Docker Compose)
+
+## 📖 API ドキュメント
+
+アプリケーション起動後、以下のURLで API ドキュメントを確認できます。
+
+- **Swagger UI**: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+- **OpenAPI 定義**: [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
+
+API定義ファイルは `open-api.yml` としてプロジェクトルートにも配置されています。
 
 ## 🚀 環境構築と実行
 
