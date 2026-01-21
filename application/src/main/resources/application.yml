@@ -19,9 +19,8 @@ spring:
 
   # JPA/Hibernate Configuration
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: false
@@ -33,6 +32,8 @@ spring:
           batch_size: 20
         order_inserts: true
         order_updates: true
+        hbm2ddl:
+          create_namespaces: true
 
   # Security Configuration
   security:
