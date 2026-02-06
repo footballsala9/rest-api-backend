@@ -1,0 +1,17 @@
+aws:
+  s3:
+    endpoint: http://localhost:4566
+    region: us-east-1
+    bucket-name: test-bucket
+    access-key: test
+    secret-key: test
+  dynamodb:
+    endpoint: http://localhost:4566
+    region: us-east-1
+    access-key: test
+    secret-key: test
+  secretsmanager:
+    endpoint: http://localhost:4566
+    region: us-east-1
+    access-key: test
+    secret-key: test
